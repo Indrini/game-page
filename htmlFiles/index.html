@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indra's Gaming page</title>
+    <link rel="stylesheet" href="../cssStylefiles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="main-heading">Indra's Gaming Page</h1>
+      <div class="nav-container">
+        <img
+          class="logo"
+          src="../img/controller.JPG"
+          alt="pink game controller"
+        />
+        <!-- creating a nav bar with links to the two other pages -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li>
+              <a href="./gamingacessories.html" class="navbar-link">
+                Gaming Accessories</a
+              >
+            </li>
+            <li>
+              <a href="./upcomingGames.html" class="navbar-link">
+                Upcoming Games</a
+              >
+            </li>
+            <li>
+              <a href="./saveForLater.html" class="navbar-link">
+                Saved for Later</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="games-container">
+        <h2 class="subheading">My favourite games</h2>
+
+        <!-- creating a flex container for the games/accessories -->
+        <div class="all-games">
+          <!-- creating a card for each game/accessory, with a heading, img and list -->
+          <div class="game grow">
+            <h3 class="game-title">Metal Gear Solid</h3>
+            <button type ="button" id ="like1" class ="like grow">Like &#10084</button>
+            <img
+              class="game-image"
+              src="../img/metalGearSolid_.jpg"
+              alt="metal gear solid disc case"
+            />
+
+            <ul class="game-list">
+              <li>
+                Metal Gear Solid was revolutionary for its time. A tactical
+                espionage game with an ambitious and bizarre story with many
+                unexpected twists and turns.
+              </li>
+              <li>
+                Epic boss battles, each unique with captivating mechanics. Each
+                boss has a big personality and engaging backstory. Psycho-Mantis
+                being the highlight - a telekenetic mind-reader who would gague
+                your personality on how often you saved and predict your every
+                move.
+              </li>
+              <li>
+                The soundtrack was amazing and truly iconic, changing with each
+                environment and evoking a rollercoaster of emotions.
+              </li>
+            </ul>
+            <button class="saveButton grow">Save for later</button>
+          </div>
+          <div class="game grow">
+            <h3 class="game-title">Pathfinder: Wrath of the righteous</h3>
+            <button type ="button" id ="like2" class ="like grow">Like &#10084</button>
+            <img
+              class="game-image"
+              src="../img/pathfinder.jpg"
+              alt="pathfinder wrath of the righteous title image"
+            />
+
+            <ul class="game-list">
+              <li>
+                A truly epic and deep role-playing game where your choices
+                really matter.
+              </li>
+
+              <li>
+                This is a game where you can truly lose yourself for weeks on
+                end. The world is massive and beautiful with lots of attention
+                to detail. Turn-based combat is a wonderful addition and you
+                have the option to switch between real-time with pause and
+                turn-based on the fly.
+              </li>
+              <li>
+                Your companions are well-fleshed out with engaging backstories
+                that make you either love them or hate them. The crusade system
+                is a step-up from the kingdom management system in the previous
+                game, though this is not for everyone and thankfully you can let
+                the game handle the crusade for you.
+              </li>
+            </ul>
+            <button class="saveButton grow">Save for later</button>
+          </div>
+          <div class="game grow">
+            <h3 class="game-title">Divinity:Original Sin 2</h3>
+            <button id ="like3" type ="button" class ="like grow">Like &#10084</button>
+            <img
+              class="game-image"
+              src="../img/DOS2V2.jpg"
+              alt="Divinity Original Sin 2 title image"
+            />
+
+            <ul class="game-list">
+              <li>
+                A turn-based role playing game with a vast world that is a
+                delight to explore. It offers a unique co-operative experience.
+              </li>
+              <li>
+                Clever, complex combat that allows you to use your environment
+                to your advantage.
+              </li>
+              <li>
+                You can steal your way to riches, robbing merchants blind while
+                one of your other characters distracts them. Interactivity like
+                no other game - if you can imagine it, the game probably allows
+                you to do it!
+              </li>
+            </ul>
+            <button class="saveButton grow">Save for later</button>
+          </div>
+        </div>
+      </div>
+      <div class="criticSection">
+        <h3 class="critic-heading">Critic Reviews</h3>
+
+        <!-- adding a table with critic quotes and links to the critic external website -->
+        <table class="quote-table">
+          <tr>
+            <th>Game</th>
+            <th>Reviewer quote</th>
+            <th>Reviewer ranking</th>
+            <th>link to reviewer website</th>
+          </tr>
+          <tr>
+            <td>Metal Gear Solid</td>
+            <td>
+              <blockquote>
+                "I'm in awe. An admittedly ambitious project from the very
+                beginning, Metal Gear Solid has managed to deliver dutifully on
+                all of its promises".
+              </blockquote>
+              <br />
+              <cite>- IGN</cite>
+            </td>
+
+            <td>9.8/10</td>
+            <td>
+              <a
+                class="link-styles"
+                href="https://www.ign.com/articles/1998/10/22/metal-gear-solid-6"
+                target="_blank"
+              >
+                IGN</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Pathfinder Wrath of the Righteous</td>
+            <td>
+              <blockquote>
+                “A triumph of a game, and arguably the best isometric RPG since
+                Planescape Torment.”
+              </blockquote>
+              <br />
+              <cite>- Techraptor</cite>
+            </td>
+            <td>9.0/10</td>
+            <td>
+              <a
+                class="link-styles"
+                href="https://techraptor.net/gaming/reviews/pathfinder-wrath-of-righteous-review"
+                target="_blank"
+                >Techraptor</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Divinity: Original Sin 2</td>
+            <td>
+              <blockquote>
+                “One of the most captivating role-playing games ever made”
+              </blockquote>
+              <br />
+              <cite>- GameSpot</cite>
+            </td>
+            <td>10/10</td>
+            <td>
+              <a
+                class="link-styles"
+                href="https://www.gamespot.com/reviews/divinity-original-sin-2-review/1900-6416769/"
+                target="_blank"
+                >GameSpot
+              </a>
+            </td>
+          </tr>
+        </table>
+        <button class="saveButton grow">Save for later</button>
+      </div>
+      <div id="commentsSection">
+        <h3 class="critic-heading commentsHeading">Conversation</h3>
+        <p>we'd like to hear your thoughts. Keep it friendly please!</p>
+
+        <!-- creating a comment form with a text input and submit button and a display area for the comments -->
+        <form class="form-styling" id="commentForm">
+          <div>
+          <p>
+          <label class="form-label-comments"
+            >Email:</label></p>
+          <input
+          type="email"
+          id="commentUseremail"
+          name="useremail"
+          placeholder="please enter your email"/></div>
+
+          <div>
+            <p>
+            <label class="form-label-comments"
+              >Name:</label></p>
+            <input
+            type="text"
+            id="commentName"
+            name="userName"
+            placeholder="please enter your name"/></div>
+
+            <div>
+              <p>
+              <label class="form-label-comments"
+                >Comment:</label></p>
+              <textarea
+              type="text"
+              id="commentBox"
+              rows="5"
+              cols="35"
+              name="userName"
+              placeholder="please enter a comment"></textarea></div>
+          <button id="commentBtn" class="button grow" type="button">
+            Submit
+          </button>
+        </form>
+      </div>
+      <h3 class="critic-heading commentsDisplayHeading">Comments</h3>
+      <div id="commentDisplay"></div>
+    </main>
+    <script src="../javascriptFiles/home.js"></script>
+  </body>
+</html>
