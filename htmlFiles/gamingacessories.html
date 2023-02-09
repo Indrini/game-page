@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indra's Gaming page</title>
+    <link rel="stylesheet" href="../cssStylefiles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="main-heading">Indra's Gaming Page</h1>
+      <div class="nav-container">
+        <img
+          class="logo"
+          src="../img/controller.JPG"
+          alt="pink game controller"
+        />
+        <!-- creating a nav bar with links to the two other pages -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li>
+              <a href="./upcomingGames.html" class="navbar-link">
+                Upcoming Games</a
+              >
+            </li>
+            <li><a href="./index.html" class="navbar-link">Home Page</a></li>
+            <li>
+              <a href="./saveForLater.html" class="navbar-link">
+                Saved for Later</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="games-container">
+        <h2 class="subheading">Must-have PC Gaming Accessories</h2>
+        <!-- creating a flex container for the accessories -->
+        <div class="all-games">
+          <!-- creating a card for each accessory, with a heading, img and list -->
+          <div class="game grow">
+            <h3 class="game-title">Curved Gaming Monitor</h3>
+            <!-- adding a like button -->
+             <button id ="like4" type ="button" class ="like">Like &#10084</button>
+            <img
+              class="game-image"
+              alt="pitcure of gaming monitor"
+              src="../img/gamingMonitor.jpg"
+            />
+
+            <ul class="game-list">
+              <li>Makes your gaming experience more immersive</li>
+              <li>
+                freesync or gsync support with a high refresh rate and low
+                response timecan limit screen-tearing and reduce lag.
+              </li>
+              <li>
+                More comfortable for your eyes and reduces eye strain so you can
+                game for longer!
+              </li>
+            </ul>
+            <button class="saveButton grow">Save for later</button>
+          </div>
+          <div class="game grow">
+            <h3 class="game-title">Back-lit Mechanical Keyboard</h3>
+             <button id ="like5" type ="button" class ="like grow">Like &#10084</button>
+            <img
+              class="game-image"
+              alt="picture of backlit mechanical keyboard"
+              src="../img/keyboard.jpg"
+            />
+
+            <ul class="game-list">
+              <li>
+                Mechanical keys allow for faster typing, you will be able to
+                move your character much faster and with less finger fatigue
+              </li>
+              <li>
+                Customisable macros to automate tasks in games. Multiple
+                profiles can be set-up for different games
+              </li>
+              <li>
+                Backlights are cool! You can add a nice style to your gaming set
+                up and also play in the dark!
+              </li>
+            </ul>
+            <button class="saveButton grow">Save for later</button>
+          </div>
+          <div class="game grow">
+            <h3 class="game-title">RGB Gaming Mouse</h3>
+             <button id ="like6" type ="button" class ="like">Like &#10084</button>
+            <img
+              class="game-image"
+              alt="picture of gaming mouse"
+              src="../img/mouse.jpg"
+            />
+
+            <ul class="game-list">
+              <li>
+                Will make your gaming experience more comfortable with their
+                ergonomic designs
+              </li>
+              <li>
+                Extra mouse buttons you can map to certain keys on the keyboard
+                or to perform macro tasks.
+              </li>
+              <li>
+                Improve performance in games and have better control with
+                customisable DPI (dots per inch)
+              </li>
+            </ul>
+            <button class="saveButton grow">Save for later</button>
+          </div>
+        </div>
+        <div>
+          <h3 class="critic-heading">Sign-up for the latest gaming news</h3>
+
+          <!-- creating a form with a text input and submit button -->
+          <form class="form-styling"
+          
+          action="mailto:indra_barnes+hyperion-capstone@hotmail.co.uk"
+          method="post"
+          enctype=”text/plain”
+          
+          >
+            <label class="form-label"
+              >Email:
+              <input
+                type="email"
+                id="useremail"
+                name="useremail"
+                placeholder="please enter your email"
+            /></label>
+
+            <label class="form-label"
+              >Name:<input
+                type="text"
+                id="bg3"
+                name="game-choice"
+                placeholder="please enter your name"
+              />
+            </label>
+
+            <input class="button grow" type="submit" />
+          </form>
+ <!-- adding a contact me form -->
+          <h3 class="critic-heading"> Contact Me!</h3>
+          <form class="form-styling" id="commentForm"
+          action="mailto:indra_barnes+hyperion-capstone@hotmail.co.uk"
+          method="post"
+          enctype=”text/plain”>
+            <div>
+            <p>
+            <label class="form-label-comments"
+              >Email:</label></p>
+            <input
+            type="email"
+            id="commentUseremail"
+            name="useremail"
+            placeholder="please enter your email"/></div>
+  
+            <div>
+              <p>
+              <label class="form-label-comments"
+                >Name:</label></p>
+              <input
+              type="text"
+              id="commentName"
+              name="userName"
+              placeholder="please enter your name"/></div>
+ 
+              <div>
+                <p>
+                <label class="form-label-comments"
+                  >Message:</label></p>
+                <textarea
+                type="text"
+                id="commentBox"
+                rows="5"
+                cols="35"
+                name="userName"
+                placeholder="please enter your message"></textarea></div>
+            <input id="commentBtn" class="button grow" type="submit"/>
+          </form>
+        </div>
+        </div>
+      </div>
+    </main>
+    <script src="../javascriptFiles/accesories.js"></script>
+  </body>
+</html>

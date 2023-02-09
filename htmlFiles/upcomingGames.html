@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indra's Gaming page</title>
+    <link rel="stylesheet" href="../cssStylefiles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="main-heading">Indra's Gaming Page</h1>
+      <div class="nav-container">
+        <img
+          class="logo"
+          src="../img/controller.JPG"
+          alt="pink game controller"
+        />
+
+        <!-- creating a nav bar with links to the two other pages -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li>
+              <a href="./gamingacessories.html" class="navbar-link">
+                Gaming Accessories</a
+              >
+            </li>
+            <li><a href="./index.html" class="navbar-link">Home Page</a></li>
+            <li>
+              <a href="./saveForLater.html" class="navbar-link">
+                Saved for Later</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="games-container">
+        <h2 class="subheading">Exciting upcoming games</h2>
+        <!-- creating a flex container for the games/accessories -->
+        <div class="all-games">
+          <!-- creating a card for each upcoming game, with a heading, img and list -->
+          <div class="game grow">
+            <h3 class="game-title">Diablo IV</h3>
+             <button id ="like7" type ="button" class ="like">Like &#10084</button>
+            <img
+              class="game-image"
+              alt="Diablo IV title image"
+              src="../img/diablo.jpg"
+            />
+
+            <ul class="game-list">
+              <li>
+                An isometric action role-playing game set in a vast open world
+                medieval apocalypse. The world will be much larger than in
+                previous Diablo games.
+              </li>
+              <li>
+                This will be the first game in the series where you can
+                customise your character! The game will feature five classes at
+                launch: Barbarian, Druid, Sorceress, Rogue, and Necromancer.
+              </li>
+              <li class="highlight">Expected to release on June 6th 2023</li>
+            </ul>
+            <button class="saveButton grow">Save for later</button>
+          </div>
+          <div class="game grow">
+            <h3 class="game-title">Baldur's Gate 3</h3>
+             <button id ="like8" type ="button" class ="like">Like &#10084</button>
+            <img
+              class="game-image"
+              alt="Baldur's Gate title image"
+              src="../img/bg3.jpg"
+            />
+
+            <ul class="game-list">
+              <li>
+                It is the third instalment in the Baldur's Gate series. It is an
+                isometric RPG with turn-based combat where you adventure through
+                the forgoteen realms.
+              </li>
+              <li>
+                It will be based on the rule set from the fifth edition of the
+                Dungeons and Dragons rulebook.You can play alone or in a party
+                of up to four in multiplayer.
+              </li>
+              <li class="highlight">It is set to release in August 2023</li>
+            </ul>
+            <button class="saveButton grow">Save for later</button>
+          </div>
+          <div class="game grow">
+            <h3 class="game-title">Warhammer 40K Rogue Trader</h3>
+             <button id ="like9" type ="button" class ="like">Like &#10084</button>
+            <img
+              class="game-image"
+              alt="Warhammer 40k Rogue Trader title image"
+              src="../img/warhammer.jpg"
+            />
+
+            <ul class="game-list">
+              <li>A role playing game set in the 41st illenium.</li>
+              <li>
+                It is loosely based on the tabletop RPG set in the 40k universe.
+                You will adventure as a space privateer and explore the Kroronus
+                Expanse.
+              </li>
+              <li class="highlight">
+                There is no official release date yet, but there is speculation
+                that a release could happen in Q3 2023
+              </li>
+            </ul>
+            <button class="saveButton grow">Save for later</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="critic-heading">
+          <!-- adding a radio form with submit button for voting on a game -->
+          Vote: Which of these games are you most excited for?
+        </h3>
+        <form class="form-styling">
+          <label class="form-label">
+            <input type="radio" id="diabloiv" name="game-choice" />Diablo
+            IV</label
+          >
+
+          <label class="form-label"
+            ><input type="radio" id="bg3" name="game-choice" />Baldurs Gate 3
+          </label>
+
+          <label class="form-label">
+            <input type="radio" id="warhammer40k" name="game-choice" />Warhammer
+            40k Rogue Trader</label
+          >
+          <input class="button grow" type="submit" />
+        </form>
+      </div>
+    </main>
+    <script src="../javascriptFiles/upcoming.js"></script>
+  </body>
+</html>

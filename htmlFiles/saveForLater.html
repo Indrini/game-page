@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indra's Gaming page</title>
+    <link rel="stylesheet" href="../cssStylefiles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="main-heading">Indra's Gaming Page</h1>
+      <div class="nav-container">
+        <img
+          class="logo"
+          src="../img/controller.JPG"
+          alt="pink game controller"
+        />
+        <!-- creating a nav bar with links to the other pages -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li>
+              <a href="./upcomingGames.html" class="navbar-link">
+                Upcoming Games</a
+              >
+            </li>
+            <li>
+              <a href="./gamingacessories.html" class="navbar-link">
+                Gaming Accessories</a
+              >
+            </li>
+            <li><a href="./index.html" class="navbar-link">Home Page</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- where the saved items will be populated by javascript -->
+      <div class="games-container">
+        <h2 class="subheading">Saved for Later</h2>
+      </div>
+      <div id="savedDisplay" class="all-games"></div>
+    </main>
+    <script src="../javascriptFiles/saveForLater.js"></script>
+  </body>
+</html>
